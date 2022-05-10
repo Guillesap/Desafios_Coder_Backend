@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos.css" />
+    <title>PELICULAS VHS</title>
+</head>
+
+<body>
+
+    <h1> Bienvenidos a "VHS HORROR CLUB" </h1>
+    <h2>"Venta de DVDs para todos los amantes del cine de terror "</h2>
+      <div id="michael">
+        <img src="https://i.blogs.es/65a756/halloween-kills/450_1000.jpg">
+      </div>
+    <h1> Carga tu película favorita </h1>
+    <form autocomplete="off" action="/api/productos/agregar" method="POST">
+        Nombre: <input type="text" name="nombre">
+        Descripcion: <input type="text" name="descripcion">
+        Codigo: <input type="number" name="codigo">
+        Foto URL: <input type="text" name="foto">
+        Precio: <input type="number" name="precio">
+        Stock: <input type="number" name="stock">
+        <button>ENVIAR</button>
+    </form>
+
+</body>
+
+</html>

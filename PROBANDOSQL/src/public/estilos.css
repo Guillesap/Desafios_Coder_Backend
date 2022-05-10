@@ -1,0 +1,30 @@
+body{
+    background: -webkit-linear-gradient(left, #0a0a0b, #ff4d00);
+}
+
+
+h1 {
+    color: rgb(200, 255, 0);
+    text-align: center;
+}
+
+h2 {
+    color: rgb(238, 234, 234);
+    text-align: center;
+}
+
+#michael {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1mm;
+  }
+
+  #michael img{
+    border: solid;
+    border-color: rgb(239, 233, 233);
+    margin: 0 auto;
+  }
+
+form {
+    color: white;
+}
