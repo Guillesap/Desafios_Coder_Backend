@@ -26,7 +26,7 @@ const config = {
         messages: path.resolve(__dirname, '../data/messages.txt')
     },
     firebase: {
-        privateKey: path.resolve(__dirname, '../private/clase26-26f5c-firebase-adminsdk-9z6sm-27f3c2c4c9.json')
+        privateKey: path.resolve(__dirname, '../private/basefirebase-b567c-firebase-adminsdk-hnuqn-d153643a45.json')
     },
     jwt: {
         privateKey: 'myprivatekey'

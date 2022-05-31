@@ -41,17 +41,7 @@ passport.use(new LocalStrategy(
 ));
 
 
-passport.use(new FacebookStrategy({
-    clientID: config.facebook.clientID,
-    clientSecret: config.facebook.clientSecret,
-    callbackURL: config.facebook.callbackURL,
-    profileFields: ['id', 'displayName', 'photos', 'email']
-},
-    function (accessToken, refreshToken, profile, done) {
-        console.log(profile);
-        done(null, profile);
-    }
-));
+
 
 passport.serializeUser(function (user, done) {
     done(null, user);
@@ -92,8 +82,6 @@ io.on("connection", async (socket) => {
 });
 
 
-app.get('/auth/facebook', passport.authenticate('facebook', { scope: ['email'] }));
-app.get('/auth/facebook/callback', passport.authenticate('facebook', { failureRedirect: '/login-error', successRedirect: '/home', authType: 'reauthenticate' }));
 
 app.get('/', (req, res) => {
     res.redirect('/login')
